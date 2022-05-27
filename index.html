@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenu</title>
+</head>
+<style>
+    .anim{
+        background-color: red;
+        width: 200px;
+        height: 300px;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -100px;
+        /* transform: translate(-50%, -50%); */
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        /* background-color: wheat; */
+        
+    }
+    .an{
+        background-color: green;
+        animation: glou 3s alternate infinite;
+    }
+    @keyframes glou {
+        from{
+            color: red;
+        }
+        to{
+            background: yellow;
+        }
+    }
+    .animo{
+        width: 200px;
+        height: 300px;
+        background-color: red;
+        transition: width 3s, height 3s, background 3s, transform 3s;
+    }
+    /* .animo:hover{
+        width: 400px;
+        height: 200px;
+        transform:skew(30deg);
+        background-color: yellowgreen;
+    } */
+    div>div .pipi{
+        background-color: yellow;
+        height: 30px;
+        width: 100px;
+    }
+
+    /* Code pour ce site d'exemple */
+    body{
+        background: url('bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .menu{
+        display: flex;
+        margin: 1.7ex 10ex;
+    }
+    :root{
+        --bs-orange: rgb(255, 145, 0);
+    }
+    .button{
+        background-color:var(--bs-orange);
+        border: 0px;
+        width: 100px;
+        border-radius: 0 3px 3px 0;
+    }
+    .input>form>input{
+        border-radius: 3px 0 0 3px;
+        height: 40px;
+        padding-left: 10px;
+        background: transparent;
+        color: white;
+        border: 0.1px solid rgb(150, 87, 5);
+    }
+    .pra{
+        font-size: 40px;
+        color: var(--bs-orange);
+        font-weight: 800;
+    }
+    .menu>ul{
+        width: 100%;
+        display: flex;
+        padding: 0 10ex;
+        justify-content: space-between;
+        list-style: none;
+        background-color: green;
+        position: relative;
+    }
+    .menu>ul>li a{
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: .8ex;
+    }
+    .input>form{
+        display: flex;
+    }
+</style>
+<body>
+    <div class="menu">
+        <span class="pra">PraRoz</span>
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">service</a>
+            </li>
+            <li>
+                <a href="#">design</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+        </ul>
+        <div class="input">
+            <form action="#">
+                <input type="text" class="form-cont" placeholder="Search">
+                <button class="button" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div>
+                <p>
+                    lorem
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, possimus 
+                    commodi odit laborum quidem amet ducimus dolores blanditiis vero error illum 
+                    quo nulla exercitationem assumenda ad in eius enim ipsa veritatis fugit repellendus 
+                    iure corrupti iste. Ipsum, velit? Dignissimos, eligendi dicta doloremque provident 
+                    eaque distinctio nihil iure dolore nulla beatae eius saepe tempore porro iusto temporibus commodi iste ipsam. Numquam excepturi, suscipit inventore reiciendis molestias unde fugiat hic officia ducimus ab nam, sunt vitae velit, a iste tempora ex eos impedit. Voluptas minima quo eum labore sit quasi, nisi iste incidunt 
+                    quis atque, dolores illum, dolore voluptates deleniti explicabo nobis?
+                </p>
+            </div>
+        </div>
+        <main>
+            
+        </main>
+    </div>
+</body>
+</html>
